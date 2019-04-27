@@ -52,5 +52,18 @@
 
 For example, given the query string de and the set of strings [dog, deer, deal], return [deer, deal]. -->
 
+<script>
+  var myArray = ["deer", "dog", "deep", "delve", "answer"];
+
+  function queryString(part, array) {
+    let newArray = [];
+    array.forEach(word => {
+      if (word.includes(part)) newArray.push(word);
+    });
+    return newArray;
+  }
+
+</script>
+
 </body>
 </html>
